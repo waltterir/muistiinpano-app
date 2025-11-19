@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-
 function Header() {
     return(
-        <header>
-            <h1>moro</h1>
+        <header className="text-red-400">
+            <h1>Projekti alkaa</h1>
         </header>
-    );
+    )
 }
+
+export default Header;
