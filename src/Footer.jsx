@@ -1,6 +1,11 @@
 function Footer() {
     return(
-        <p></p>
+        <footer>
+            <p className="text-xs text-black font-mono absolute bottom-5 left-1/2 -translate-x-1/2"
+            >
+                © Waltteri Riihimäki
+            </p>
+        </footer>
     )
 }
 
