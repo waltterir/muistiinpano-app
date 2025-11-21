@@ -1,9 +1,9 @@
 import { useStore } from "./store";
 
-function Opintojakso({ name, id }) {
+function CourseTag({ name, id }) {
     return(
         <li>
-            {name} - {id}
+            {name}
         </li>
     );
 }

@@ -15,10 +15,10 @@ function AddCourses() {
         ? Math.max(...courses.map(course => course.id)) + 1
         : 1;
 
-        addCourse({ id, nextID, name });
+        addCourse({ id: nextID, name });
 
         setMessage(`Opintojakso '${name}' lisätty id:llä ${nextID}`);
-
+        
         setName("");
     };
 
