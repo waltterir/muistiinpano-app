@@ -2,11 +2,11 @@ import { create  } from "zustand";
 
 export const useStore = create((set) => ({
     apiOpintojaksot: [],
-    customOpintojakso: [],
+    customOpintojaksot: [],
 
-    setApiOpintojaksot: (opintojakso) => set({ apiOpintojaksot: opintojakso }),
+    setApiOpintojaksot: (data) => set({ apiOpintojaksot: data }),
 
     addOpintojakso: (opintojakso) => set((state) => ({
-        customOpintojakso: [...state.customOpintojakso, opintojakso],
+        customOpintojaksot: [...state.customOpintojaksot, opintojakso],
     })),
 }));
