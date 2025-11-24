@@ -11,7 +11,7 @@ const haeOpintojaksot = async () => {
   return response.json();
 };
 
-function Courses() {
+function Courses({ selectedCourse, onSelectCourse, isLocked }) {
   const { data } = useQuery({
     queryKey: ["opintojaksot"],
     queryFn: haeOpintojaksot,
@@ -20,7 +20,6 @@ function Courses() {
   const apiOpintojaksot = useStore((state) => state.apiOpintojaksot);
   const customOpintojaksot = useStore((state) => state.customOpintojaksot);
   const setApiOpintojaksot = useStore((state) => state.setApiOpintojaksot);
-  const [selectedCourse, setSelectedCourse] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -29,19 +28,20 @@ function Courses() {
     }
   }, [data, setApiOpintojaksot]);
 
+  // renderöidään listat yhteen
   const opintojaksot = [...apiOpintojaksot, ...customOpintojaksot];
 
-
   const HandleSelect = (course) => {
-    setSelectedCourse(course);
+    onSelectCourse(course);
     setIsOpen(false);
   };
 
   return (
     <div>
       {/* Dropdown Button*/}
-      <button className="font-mono text-black " onClick={() => setIsOpen(!isOpen)}>
-        {selectedCourse ? selectedCourse.name : "Valitse opintojakso:"}
+      <button className="font-mono text-black px-2 border-2 rounded-2xl mb-3" 
+      onClick={() => setIsOpen(!isOpen)}>
+      {selectedCourse ? selectedCourse.name : "Valitse opintojakso: "}
       </button>
 
       {/* Dropdown Lista*/}

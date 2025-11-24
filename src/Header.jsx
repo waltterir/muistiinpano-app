@@ -6,12 +6,15 @@ function Header() {
         Notes<span className="text-red-400 mb-64">A</span>pp
       </h1>
       <div>
-        <nav className="mt-5 ">
-          <Link className="font-mono text-3xl" to={"/"}>
+        <nav className="mt-5 font-bold">
+          <Link className="font-mono text-2xl" to={"/"}>
             Home
           </Link>
-          <Link className="font-mono text-3xl text-white ml-10" to={"/add"}>
+          <Link className="font-mono text-2xl text-white ml-10" to={"/add"}>
             Add courses
+          </Link>
+          <Link className="font-mono text-2xl text-white ml-10" to={"/create"}>
+             Create notes
           </Link>
         </nav>
       </div>

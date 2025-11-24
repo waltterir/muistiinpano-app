@@ -7,7 +7,7 @@ function AddCoursesForm() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-  const HandleAddCourses = () => {
+  const handleAddCourses = () => {
     const id = Date.now();
     const currentName = name;
 
@@ -20,7 +20,7 @@ function AddCoursesForm() {
   };
 
   return (
-    <div className="font-mono text-black">
+    <div className="font-mono text-black font-bold">
       <input
         type="text"
         placeholder="Add course: "
@@ -29,8 +29,9 @@ function AddCoursesForm() {
       />
 
       <button 
-      className="ml-4 text-white px-2 rounded-2xl bg-black hover:scale-110 hover:-translate-y-1 hover:ease-in-out hover:bg-green-800 shadow-md" 
-      onClick={HandleAddCourses}> 
+      type="button"
+      className="ml-4 text-white px-2 rounded-2xl bg-black hover:scale-110 hover:-translate-y-1 hover:ease-in-out hover:bg-yellow-500 shadow-md" 
+      onClick={handleAddCourses}> 
       Add 
       </button>
 
