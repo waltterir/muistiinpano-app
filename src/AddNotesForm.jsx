@@ -1,55 +1,64 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useStore } from "./store";
 
+function formatTimestamp(date) {
+  const yyyy = date.getFullYear();
+  const mm = String(date.getMonth() + 1).padStart(2, "0");
+  const dd = String(date.getDate()).padStart(2, "0");
+  const hh = String(date.getHours()).padStart(2, "0");
+  const min = String(date.getMinutes()).padStart(2, "0");
+  const ss = String(date.getSeconds()).padStart(2, "0");
+  return `${yyyy}-${mm}-${dd} ${hh}:${min}:${ss}`;
+}
 
-function AddNotesForm({ selectedCourse, isLocked }) {
-    const addNote = useStore((state) => state.addMuistiinpano);
+function AddNotesForm({ selectedCourse, onAddNote, isLocked }) {
+  const addNoteStore = useStore((state) => state.addMuistiinpano);
 
-    const [text, setText] = useState("");
+  const [text, setText] = useState("");
 
-    const handleAddNotes = () => {
-        if (!text.trim() || isLocked) return;
-        if (!selectedCourse) {
-            alert("Choose course first!");
-            return;
-        }
+  const handleAddNotes = () => {
+    if (!text.trim()) return;
+    if (!selectedCourse) {
+      alert("Choose course first!");
+      return;
+    }
 
     const newNote = {
-        id: Date.now(),
-        text: text,
-        datetime: new Date().toISOString(),
-        courseId: selectedCourse.id,
-        courseName: selectedCourse.name,
+      id: Date.now(),
+      text: text.trim(),
+      timestamp: formatTimestamp(new Date()),
+      course: {
+        id: selectedCourse.id,
+        name: selectedCourse.name,
+      },
     };
 
-    addNote(newNote)
+    onAddNote(newNote);
+    addNoteStore(newNote);
     setText("");
+  };
 
-    }; 
+  return (
+    <div className="font-mono">
+      <textarea
+        className="w-80 h-40 p-4 text-lg rounded-xl mt-3 border-2 border-black text-black"
+        type="text"
+        placeholder="Save your thoughts"
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
 
-    return (
-        <div className="font-mono">
-            <textarea 
-            className="w-80 h-40 p-4 text-lg rounded-xl mt-3 border-2 border-black text-black font-bold"
-                disabled={isLocked}
-                type="text"
-                placeholder="Save your thoughts"
-                value={text}
-                onChange={(e) => setText(e.target.value)}
-                />
-
-        <div className="mt-2">
-                <button 
-                className="ml-4 text-white px-2 rounded-2xl bg-black hover:scale-110 hover:-translate-y-1 hover:ease-in-out hover:bg-yellow-500 shadow-md"
-                type="button"
-                onClick={handleAddNotes}>
-                    Save
-                </button>
-
-         </div>       
-        </div>
-
-    )
+      <div className="mt-2">
+        <button
+          className="ml-4 text-white px-2 rounded-2xl bg-black hover:scale-110 hover:-translate-y-1 hover:ease-in-out hover:bg-red-500 shadow-md"
+          type="button"
+          onClick={handleAddNotes}
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  );
 }
 
 export default AddNotesForm;

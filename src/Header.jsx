@@ -7,14 +7,14 @@ function Header() {
       </h1>
       <div>
         <nav className="mt-5 font-bold">
-          <Link className="font-mono text-2xl" to={"/"}>
+          <Link className="font-mono text-2xl text-white" to={"/"}>
             Home
           </Link>
           <Link className="font-mono text-2xl text-white ml-10" to={"/add"}>
             Add courses
           </Link>
           <Link className="font-mono text-2xl text-white ml-10" to={"/create"}>
-             Create notes
+            Create notes
           </Link>
           <Link className="font-mono text-2xl text-white ml-10" to={"/list"}>
             List Notes

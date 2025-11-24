@@ -16,19 +16,25 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <>
-      <div className="absolute top-10 left-1/2 -translate-x-1/2  ">
-        <img src={logo} alt="Logo" className="w-64" />
-      </div>
       <QueryClientProvider client={queryClient}>
-        <Header />
+        <div className="flex flex-col min-h-screen">
+          <div className="flex justify-center mt-5">
+            <img src={logo} alt="Logo" className="w-64" />
+          </div>
 
-        <Routes>
-          <Route path="/" element={<MainBody />} />
-          <Route path="/add" element={<AddCoursesForm />} />
-          <Route path="/create" element={<CreateNotes />} /> 
-          <Route path="/list" element={<ListNotes /> } />
-        </Routes>
-        <Footer />
+          <Header />
+
+          <main className="grow mt-40">
+            <Routes>
+              <Route path="/" element={<MainBody />} />
+              <Route path="/add" element={<AddCoursesForm />} />
+              <Route path="/create" element={<CreateNotes />} />
+              <Route path="/list" element={<ListNotes />} />
+            </Routes>
+          </main>
+
+          <Footer />
+        </div>
       </QueryClientProvider>
     </>
   );

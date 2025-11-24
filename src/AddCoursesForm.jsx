@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useStore } from "./store";
 
 function AddCoursesForm() {
@@ -28,11 +28,12 @@ function AddCoursesForm() {
         onChange={(e) => setName(e.target.value)}
       />
 
-      <button 
-      type="button"
-      className="ml-4 text-white px-2 rounded-2xl bg-black hover:scale-110 hover:-translate-y-1 hover:ease-in-out hover:bg-yellow-500 shadow-md" 
-      onClick={handleAddCourses}> 
-      Add 
+      <button
+        type="button"
+        className="ml-4 text-white px-2 rounded-2xl bg-black hover:scale-110 hover:-translate-y-1 hover:ease-in-out hover:bg-red-500 shadow-md"
+        onClick={handleAddCourses}
+      >
+        Add
       </button>
 
       {message && <p className="text-black mt-2">{message}</p>}

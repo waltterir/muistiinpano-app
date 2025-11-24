@@ -1,5 +1,5 @@
 import { useStore } from "./store";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 
 const haeOpintojaksot = async () => {
@@ -32,6 +32,9 @@ function Courses({ selectedCourse, onSelectCourse, isLocked }) {
   const opintojaksot = [...apiOpintojaksot, ...customOpintojaksot];
 
   const HandleSelect = (course) => {
+    if (isLocked && course.id !== selectedCourse?.id) {
+      return;
+    }
     onSelectCourse(course);
     setIsOpen(false);
   };
@@ -39,18 +42,19 @@ function Courses({ selectedCourse, onSelectCourse, isLocked }) {
   return (
     <div>
       {/* Dropdown Button*/}
-      <button className="font-mono text-black px-2 border-2 rounded-2xl mb-3" 
-      onClick={() => setIsOpen(!isOpen)}>
-      {selectedCourse ? selectedCourse.name : "Valitse opintojakso: "}
+      <button
+        className="font-mono text-black px-2 border-2 mb-3 rounded-2xl"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {selectedCourse ? selectedCourse.name : "Valitse opintojakso: "}
       </button>
 
       {/* Dropdown Lista*/}
       {isOpen && (
         <ul className="border-2 px-2 font-mono ">
           {opintojaksot.map((opintojakso) => (
-            <li
-            key={opintojakso.id} onClick={() => HandleSelect(opintojakso)}>
-            {opintojakso.name}
+            <li key={opintojakso.id} onClick={() => HandleSelect(opintojakso)}>
+              {opintojakso.name}
             </li>
           ))}
         </ul>
