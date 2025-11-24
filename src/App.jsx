@@ -9,6 +9,7 @@ import logo from "./assets/logo.png";
 import Courses from "./Courses";
 import AddCoursesForm from "./AddCoursesForm";
 import CreateNotes from "./CreateNotes";
+import ListNotes from "./ListNotes";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<MainBody />} />
           <Route path="/add" element={<AddCoursesForm />} />
           <Route path="/create" element={<CreateNotes />} /> 
+          <Route path="/list" element={<ListNotes /> } />
         </Routes>
         <Footer />
       </QueryClientProvider>

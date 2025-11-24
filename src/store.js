@@ -5,6 +5,7 @@ export const useStore = create((set) => ({
     customOpintojaksot: [],
     apiNotes: [],
     customNotes: [],
+    removedNotes: [],
 
 
     /* Opintojakso */
@@ -19,7 +20,18 @@ export const useStore = create((set) => ({
     /* Muistiinpano */ 
     setApiNotes: (data) => set ({ apiNotes: data }),
 
-    addMuistiinpano: (muistiinapano) => set((state) => ({
-        customNotes: [...state.customNotes, muistiinapano],
+    addMuistiinpano: (muistiinpano) => set((state) => ({
+        customNotes: [...state.customNotes, muistiinpano],
     })),
+
+
+    /* Muistiinpano Poistot */
+    removeCustomNote: (noteId) => set((state) => ({
+        customNotes: state.customNotes.filter(note => note.id !== noteId),
+    })),
+ 
+    removeApiNote: (noteId) => set((state) => ({
+        removedNotes: [...state.removedNotes, noteId]
+    })),
+
 }));

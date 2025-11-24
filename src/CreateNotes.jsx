@@ -24,7 +24,7 @@ useEffect(() => {
 
 
     return (
-    <div className="flex flex-col items-center mt-80 font-bold">
+    <div className="flex flex-col items-center mt-80 font-bold text-black">
         <Courses 
         selectedCourse={selectedCourse}
         onSelectCourse={setSelectedCourse}

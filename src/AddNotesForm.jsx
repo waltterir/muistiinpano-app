@@ -2,23 +2,27 @@ import React, { useState } from "react";
 import { useStore } from "./store";
 
 
-function AddNotesForm({ selectedCourse, onAddNote, isLocked }) {
+function AddNotesForm({ selectedCourse, isLocked }) {
     const addNote = useStore((state) => state.addMuistiinpano);
 
     const [text, setText] = useState("");
 
     const handleAddNotes = () => {
         if (!text.trim() || isLocked) return;
+        if (!selectedCourse) {
+            alert("Choose course first!");
+            return;
+        }
 
     const newNote = {
         id: Date.now(),
         text: text,
         datetime: new Date().toISOString(),
-        courseId: selectedCourse.id
+        courseId: selectedCourse.id,
+        courseName: selectedCourse.name,
     };
 
-    
-    onAddNote(newNote)
+    addNote(newNote)
     setText("");
 
     }; 

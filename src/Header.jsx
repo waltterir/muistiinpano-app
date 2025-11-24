@@ -16,6 +16,9 @@ function Header() {
           <Link className="font-mono text-2xl text-white ml-10" to={"/create"}>
              Create notes
           </Link>
+          <Link className="font-mono text-2xl text-white ml-10" to={"/list"}>
+            List Notes
+          </Link>
         </nav>
       </div>
     </header>
