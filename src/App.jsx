@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -6,7 +5,6 @@ import Header from "./Header";
 import MainBody from "./MainBody";
 import Footer from "./Footer";
 import logo from "./assets/logo.png";
-import Courses from "./Courses";
 import AddCoursesForm from "./AddCoursesForm";
 import CreateNotes from "./CreateNotes";
 import ListNotes from "./ListNotes";

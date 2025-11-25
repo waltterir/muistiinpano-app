@@ -11,7 +11,7 @@ function formatTimestamp(date) {
   return `${yyyy}-${mm}-${dd} ${hh}:${min}:${ss}`;
 }
 
-function AddNotesForm({ selectedCourse, onAddNote, isLocked }) {
+function AddNotesForm({ selectedCourse, onAddNote }) {
   const addNoteStore = useStore((state) => state.addMuistiinpano);
 
   const [text, setText] = useState("");

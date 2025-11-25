@@ -51,7 +51,7 @@ function Courses({ selectedCourse, onSelectCourse, isLocked }) {
 
       {/* Dropdown Lista*/}
       {isOpen && (
-        <ul className="border-2 px-2 font-mono ">
+        <ul className=" px-2 font-mono ">
           {opintojaksot.map((opintojakso) => (
             <li key={opintojakso.id} onClick={() => HandleSelect(opintojakso)}>
               {opintojakso.name}
