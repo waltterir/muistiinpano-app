@@ -20,7 +20,7 @@ function AddCoursesForm() {
   };
 
   return (
-    <div className="font-mono text-black font-bold">
+    <div className="font-mono text-black font-bold px-2 py-5 shadow-xl">
       <input
         type="text"
         placeholder="Add course:"
