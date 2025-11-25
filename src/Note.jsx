@@ -13,7 +13,7 @@ function Note({ note, isCustom }) {
   };
 
   return (
-    <li className="bg-gray-100 shadow-md rounded-x1 p-4 mb-2 border-gray-200 font-mono">
+    <div className="bg-gray-100 shadow-md rounded-xl p-4 mb-2 border-gray-200 font-mono">
       <div className="flex items-center justify-between text-xs text-gray-500 mb-2">
         <span>{note.timestamp}</span>
         <span className=" text-gray-700">{note.course?.name}</span>
@@ -25,7 +25,7 @@ function Note({ note, isCustom }) {
           ❌
         </button>
       </p>
-    </li>
+    </div>
   );
 }
 

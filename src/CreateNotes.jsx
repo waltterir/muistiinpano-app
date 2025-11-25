@@ -18,7 +18,7 @@ function CreateNotes() {
   }, [sessionNotes]);
 
   return (
-    <div className="flex flex-col items-center font-bold text-black font-mono px-4 shadow-md">
+    <div className="flex flex-col items-center font-bold text-black font-mono px-4">
       <Courses
         selectedCourse={selectedCourse}
         onSelectCourse={setSelectedCourse}

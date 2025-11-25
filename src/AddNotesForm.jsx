@@ -41,7 +41,7 @@ function AddNotesForm({ selectedCourse, onAddNote }) {
   return (
     <div className="font-mono">
       <textarea
-        className="w-80 h-40 p-4 text-lg rounded-xl mt-3 border-2 border-black text-black"
+        className="w-80 h-40 p-4 text-md rounded-xl mt-2 border-2 border-black text-black"
         type="text"
         placeholder="Save your thoughts"
         value={text}
@@ -50,7 +50,7 @@ function AddNotesForm({ selectedCourse, onAddNote }) {
 
       <div className="mt-2">
         <button
-          className="ml-4 text-white px-2 rounded-2xl bg-black hover:scale-110 hover:-translate-y-1 hover:ease-in-out hover:bg-red-500 shadow-md"
+          className="ml-4 text-white px-2 rounded-2xl bg-black hover:scale-110 hover:-translate-y-1 hover:ease-in-out hover:bg-red-400 shadow-md"
           type="button"
           onClick={handleAddNotes}
         >

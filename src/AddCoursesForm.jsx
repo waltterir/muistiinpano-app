@@ -23,14 +23,14 @@ function AddCoursesForm() {
     <div className="font-mono text-black font-bold">
       <input
         type="text"
-        placeholder="Add course: "
+        placeholder="Add course:"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
 
       <button
         type="button"
-        className="ml-4 text-white px-2 rounded-2xl bg-black hover:scale-110 hover:-translate-y-1 hover:ease-in-out hover:bg-red-500 shadow-md"
+        className="ml-4 text-white px-2 rounded-2xl bg-black hover:scale-110 hover:-translate-y-1 hover:ease-in-out hover:bg-red-400 shadow-md"
         onClick={handleAddCourses}
       >
         Add

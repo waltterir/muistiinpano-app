@@ -22,7 +22,7 @@ function App() {
 
           <Header />
 
-          <main className="grow mt-40">
+          <main className="grow mt-20">
             <Routes>
               <Route path="/" element={<MainBody />} />
               <Route path="/add" element={<AddCoursesForm />} />
