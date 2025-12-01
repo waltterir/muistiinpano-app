@@ -19,7 +19,6 @@ function AddNotesForm({ selectedCourse, onAddNote }) {
   const handleAddNotes = () => {
     if (!text.trim()) return;
     if (!selectedCourse) {
-      alert("Choose course first!");
       return;
     }
 
