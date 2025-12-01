@@ -41,6 +41,7 @@ function AddNotesForm({ selectedCourse, onAddNote }) {
     <div className="font-mono">
       <textarea
         className="w-80 h-40 p-4 text-md rounded-xl mt-2 border-2 border-black text-black"
+        id="text"
         type="text"
         placeholder="Save your thoughts"
         value={text}
