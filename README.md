@@ -6,13 +6,13 @@ Muistiinpano-app on sovellus, jonka avulla voit lisätä opintojaksoja ja liitt�
 
 ## Käyttö
 
-Asenna riippuvuudet komennolla:
+1. Asenna riippuvuudet komennolla:
 npm install
 
-käynnistä kehitysympäristö:
+2. käynnistä kehitysympäristö:
 npm run dev
 
-Avaa sovellus selaimessa osoitteessa:
+3. Avaa sovellus selaimessa osoitteessa:
 http://localhost:5173/
 
 ## Keinoälyn käyttö
