@@ -17,10 +17,14 @@ http://localhost:5173/
 
 ## Keinoälyn käyttö
 
-Käytin keinoälyä tyylittelyn apuna sekä vinkkien ja ideoiden saamiseksi ohjelman toteutukseen liittyvissä kohdissa sekä selventämään epäselviä kohtia. Keinoäly ei saanut antaa suoraan valmiita ratkaisuja, vaan se auttoi antamalla vinkkejä millä toiminnallisuus olisi mahdollista toteuttaa ja mihin kohtaan pitäisi keskittyä. Käytin sitä myös debugaamiseen tukena jotta virheiden paikantaminen/korjaaminen olisi nopeampaa
+Hyödynsin keinoälyä tukena erityisesti tyylittelyssä, ideoinnissa ja ongelmanratkaisussa. Keinoälyä ei käytetty valmiiden ratkaisujen tuottamiseen, vaan se tarjosi vinkkejä ja suuntaa, joiden pohjalta toteutin toiminnallisuudet itse.
 
-Tiesin että keinoälyn antamat vinkit oli oikein koska niiden pohjalta kun rakensin, ne toimivat niinkuin haluisin esim. tyylittelyssä.
+Käytin keinoälyä myös debuggauksen tukena virheiden paikantamisessa ja ratkaisemisessa. Esimerkiksi timestampin muotoilussa keinoäly auttoi ehdottamaan ratkaisua, jonka toimivuuden varmistin toteuttamalla ja testaamalla sen itse.
 
-Eniten tarvitsin apua miten saan muutettua timestampin siihen muotoon kuin REST API:STA haettujen muistiinpanojen timestampit.
-Tämän tarkistin itse tekemällä vinkin pohjalta toiminnon.
-Tähän käytin keinoälyä koska en löytänyt mitään dokumentaatioista/netistä mikä vaikutti olevan oikein.
+Kaikki ratkaisut on ymmärretty ja itse toteutettu.
+
+## Projektin tila ja jatkokehitys
+
+Tämä projekti on toteutettu opintojakson päättötyönä, ja sen tavoitteena oli harjoitella Reactin perusperiaatteita sekä REST API:n käyttöä.
+
+Sovellus on toimiva, mutta siinä on vielä joitakin pieniä puutteita ja kehityskohteita.
