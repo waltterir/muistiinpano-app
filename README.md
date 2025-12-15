@@ -25,6 +25,11 @@ Kaikki ratkaisut on ymmärretty ja itse toteutettu.
 
 ## Projektin tila ja jatkokehitys
 
-Tämä projekti on toteutettu opintojakson päättötyönä, ja sen tavoitteena oli harjoitella Reactin perusperiaatteita sekä REST API:n käyttöä.
+Tämä projekti on toteutettu opintojakson päättötyönä. Tavoitteena oli harjoitella Reactin perusperiaatteita sekä REST API:n käyttöä.
 
-Sovellus on toimiva, mutta siinä on vielä joitakin pieniä puutteita ja kehityskohteita.
+Sovellus on toimiva, mutta siinä on vielä joitakin pieniä puutteita. Mahdollisia jatkokehityskohteita ovat:
+
+- Täysi responsiivisuus eri näyttöko'oille
+- ID-arvojen yhtenäistäminen REST API:sta haettujen ja paikallisesti luotujen muistiinpanojen välillä
+  - Paikallisesti luotujen muistiinpanojen ID:t perustuvat tällä hetkellä aikaleimaan
+
