@@ -30,6 +30,7 @@ Tämä projekti on toteutettu opintojakson päättötyönä. Tavoitteena oli har
 Sovellus on toimiva, mutta siinä on vielä joitakin pieniä puutteita. Mahdollisia jatkokehityskohteita ovat:
 
 - Täysi responsiivisuus eri näyttöko'oille
+- Muistiinpanolistauksen suodatuksessa ei pääse vaihtamaan takaisin kaikkien muistiinpanojen listaamiseen
 - ID-arvojen yhtenäistäminen REST API:sta haettujen ja paikallisesti luotujen muistiinpanojen välillä
   - Paikallisesti luotujen muistiinpanojen ID:t perustuvat tällä hetkellä aikaleimaan
 
