@@ -1,4 +1,5 @@
 # Muistiinpano App
+React-pohjainen muistiinpanosovellus, toteutettu osana opintojakson päättötyötä.
 
 ## Kuvaus toiminnasta
 
