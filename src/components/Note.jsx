@@ -1,4 +1,4 @@
-import { useStore } from "./store";
+import { useStore } from "../store";
 
 function Note({ note, isCustom }) {
   const removeCustomNote = useStore((state) => state.removeCustomNote);

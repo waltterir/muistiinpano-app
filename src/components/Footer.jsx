@@ -1,3 +1,4 @@
+// Component for rendering the footer of the application
 function Footer() {
   return (
     <footer className="w-full py-2 mt-auto">

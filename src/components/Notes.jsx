@@ -1,11 +1,11 @@
-import { useStore } from "./store";
+import { useStore } from "../store";
 import { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import Note from "./Note";
 
 const haeMuistiinpanot = async () => {
   const response = await fetch(
-    "https://luentomuistiinpano-api.netlify.app/.netlify/functions/notes"
+    "https://luentomuistiinpano-api.netlify.app/.netlify/functions/notes",
   );
   if (!response.ok) throw new Error("Verkkovirhe: " + response.status);
   return response.json();

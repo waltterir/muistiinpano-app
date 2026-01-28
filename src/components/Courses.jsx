@@ -1,11 +1,11 @@
-import { useStore } from "./store";
+import { useStore } from "../store";
 import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { FaChevronDown } from "react-icons/fa";
 
 const haeOpintojaksot = async () => {
   const response = await fetch(
-    "https://luentomuistiinpano-api.netlify.app/.netlify/functions/courses"
+    "https://luentomuistiinpano-api.netlify.app/.netlify/functions/courses",
   );
 
   if (!response.ok) throw new Error("Verkkovirhe: " + response.status);

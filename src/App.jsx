@@ -1,13 +1,13 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import Header from "./Header";
-import MainBody from "./MainBody";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import MainBody from "./components/MainBody";
+import Footer from "./components/Footer";
 import logo from "./assets/logo.png";
-import AddCoursesForm from "./AddCoursesForm";
-import CreateNotes from "./CreateNotes";
-import ListNotes from "./ListNotes";
+import AddCoursesForm from "./components/AddCoursesForm";
+import CreateNotes from "./components/CreateNotes";
+import ListNotes from "./components/ListNotes";
 
 const queryClient = new QueryClient();
 
