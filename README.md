@@ -1,8 +1,10 @@
 # Muistiinpano App
 React-pohjainen muistiinpanosovellus, toteutettu osana opintojakson päättötyötä.
 
-## Kuvaus toiminnasta
+## Demo
+https://notesapp-cyan-zeta.vercel.app/
 
+## Kuvaus toiminnasta
 Muistiinpano-app on sovellus, jonka avulla voit lisätä opintojaksoja ja liittää niihin muistiinpanoja ja tarkastella luotuja muistiinpanoja
 
 ## Käyttö
