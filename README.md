@@ -6,6 +6,14 @@ A React-based notes application built as part of a course final project.
 
 https://notesapp-cyan-zeta.vercel.app/
 
+## 🛠️ Tech Stack
+
+- React
+- Vite
+- JavaScript
+- REST API
+- CSS
+
 ## Description
 
 The Notes App is an application that allows users to add study courses, attach notes to them, and view the created notes.
