@@ -36,8 +36,19 @@ The Notes App is an application that allows users to add study courses, attach n
 
 Install dependencies:
 
-npm install 
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
+```
+
+Open in your browser:
+
+http://localhost:5173/
 
 ## Use of AI
 
