@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AddNotesForm from "./AddNotesForm";
-import Courses from "./Courses";
+import Courses from "../Courses/Courses";
 
 // Component for creating notes associated with selected courses
 function CreateNotes() {

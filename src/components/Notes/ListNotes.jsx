@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Courses from "./Courses";
-import Notes from "./Notes";
+import Courses from "../Courses/Courses";
+import Notes from "../Courses/Notes";
 
 function ListNotes() {
   const [selectedCourse, setSelectedCourse] = useState(null);

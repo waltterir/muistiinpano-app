@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useStore } from "../store";
+import { useStore } from "../../store";
 
 function AddCoursesForm() {
   const addCourse = useStore((state) => state.addOpintojakso);

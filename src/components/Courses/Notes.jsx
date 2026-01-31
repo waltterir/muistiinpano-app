@@ -1,7 +1,7 @@
-import { useStore } from "../store";
+import { useStore } from "../../store";
 import { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
-import Note from "./Note";
+import Note from "../Notes/Note";
 
 const haeMuistiinpanot = async () => {
   const response = await fetch(

@@ -1,4 +1,4 @@
-import { useStore } from "../store";
+import { useStore } from "../../store";
 import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { FaChevronDown } from "react-icons/fa";

@@ -5,9 +5,9 @@ import Header from "./components/Header";
 import MainBody from "./components/MainBody";
 import Footer from "./components/Footer";
 import logo from "./assets/logo.png";
-import AddCoursesForm from "./components/AddCoursesForm";
-import CreateNotes from "./components/CreateNotes";
-import ListNotes from "./components/ListNotes";
+import AddCoursesForm from "./components/Courses/AddCoursesForm";
+import CreateNotes from "./components/Notes/CreateNotes";
+import ListNotes from "./components/Notes/ListNotes";
 
 const queryClient = new QueryClient();
 
