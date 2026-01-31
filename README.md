@@ -1,6 +1,6 @@
 # Notes App
 
-A React-based notes application built as part of a course final project.
+A React-based study notes application that allows users to create courses and attach notes to them. Built as a final course project to practice React fundamentals and REST API integration.
 
 ## Demo
 
