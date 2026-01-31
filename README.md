@@ -27,6 +27,7 @@ https://notesapp-cyan-zeta.vercel.app/
 - JavaScript
 - REST API
 - Tailwind CSS
+- Zustand (state management)
 
 ## Description
 
@@ -57,6 +58,13 @@ AI was used as a support tool especially for styling, ideation, and problem-solv
 AI was also used to support debugging and error investigation. For example, AI suggested an approach for formatting timestamps, and its correctness was verified by implementing and testing it independently.
 
 All solutions have been understood and implemented by myself.
+
+## What I Learned
+
+- Managing global state with Zustand
+- Structuring React applications with reusable components
+- Integrating REST APIs into frontend applications
+- Handling async data and UI state
 
 ## Project Status and Future Development
 
