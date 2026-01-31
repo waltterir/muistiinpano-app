@@ -26,7 +26,7 @@ https://notesapp-cyan-zeta.vercel.app/
 - Vite
 - JavaScript
 - REST API
-- CSS
+- Tailwind CSS
 
 ## Description
 
