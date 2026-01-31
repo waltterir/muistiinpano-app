@@ -6,6 +6,20 @@ A React-based study notes application that allows users to create courses and at
 
 https://notesapp-cyan-zeta.vercel.app/
 
+## Screenshots
+
+### Home view
+
+![Home](screenshots/home.png)
+
+### Create note
+
+![Create Note](screenshots/create-note.png)
+
+### Notes list
+
+![Notes list](screenshots/notes-list.png)
+
 ## 🛠️ Tech Stack
 
 - React
@@ -41,7 +55,6 @@ The application is functional, but still has some minor limitations. Possible fu
 
 - Full responsiveness for different screen sizes
 - Unifying ID values between notes fetched from the REST API and locally created notes
-  -  Currently, locally created note IDs are based on timestamps
+  - Currently, locally created note IDs are based on timestamps
 - Notes list filtering
   - Ability to reset filtering so that all notes are visible again
-
